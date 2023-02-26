@@ -108,6 +108,10 @@ body {
   aspect-ratio: 16 / 9;
 }
 
+.coming-soon {
+  opacity: 0.3;
+  filter: blur(1px);
+}
 
 /* Profiles */
 
