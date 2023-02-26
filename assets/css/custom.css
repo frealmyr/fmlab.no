@@ -1,0 +1,177 @@
+/* Color definitions */
+
+:root {
+  --color-background: #282a36;
+  --color-current-line:	#44475a;
+  --color-foreground:	#f8f8f2;
+  --color-comment:	#6272a4;
+  --color-cyan:	#8be9fd;
+  --color-green:	#50fa7b;
+  --color-orange:	#ffb86c;
+  --color-pink:	#ff79c6;
+  --color-purple:	#bd93f9;
+  --color-red:	#ff5555;
+  --color-yellow:	#f1fa8c;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/permanent-marker.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Body */
+
+body {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
+
+/* Hero */
+
+.hero > .container > .row > .columns > .header {
+  font-family: 'Permanent Marker';
+  font-weight: 400;
+  margin: 3% auto;
+  width: 100%;
+  text-align: center;
+}
+
+.hero > .container > .row > .title {
+  margin: 25px 0 25px 0;
+}
+
+.hero .container .row .title h1,h5 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  display: inline-block;
+  max-width: 75%;
+}
+
+/* Projects */
+
+.projects > .container > .row {
+  text-align: center;
+}
+
+.projects > .container > .row > .columns > .header {
+  font-family: 'Permanent Marker';
+  font-weight: 400;
+  margin: 3% auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.projects .container .row .columns .project h1 {
+  font-weight: 100;
+  font-size: 12pt;
+  font-weight: 400;
+  margin: 15px 0 7px 0;
+  padding: 0;
+  text-shadow: 3px 2px 7px rgba(0, 0, 0, 0.85);
+}
+
+.box {
+  transition: box-shadow .3s;
+  border-radius: 5px;
+  border: 1px solid var(--color-current-line);
+  padding: 5px 5px 0px 5px;
+}
+
+.box:hover {
+  box-shadow: 0 0 15px var(--color-purple);
+}
+
+.box img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+
+/* Profiles */
+
+.profiles {
+  margin: 25px 0 25px 0;
+  text-align: center;
+  /* background-color: rgb(104, 104, 104); */
+}
+
+.profiles > .container > .row > .columns > .header {
+  font-family: 'Permanent Marker';
+  font-weight: 400;
+  margin: 3% auto;
+  width: 100%;
+  text-align: center;
+}
+
+.profiles p,h4 {
+  margin: 0;
+}
+
+.profile {
+  color: var(--color-foreground);
+  background-color: var(--color-current-line);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.profile > .name {
+  font-family: 'Permanent Marker';
+  font-size: 20pt;
+  margin-bottom: 10px;
+}
+
+.profile > .avatar {
+  border-radius: 50%;
+  width: 125px;
+  box-shadow: 0px 0px 10px var(--color-comment);
+}
+
+.profile > .title {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.profile > .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.profile > .social-links a {
+  margin: 0 10px;
+}
+
+.profile > .social-links img {
+  width: 25px;
+  opacity: 0.5;
+}
+
+.profile > .social-links img:hover {
+  width: 25px;
+  opacity: 1.0;
+}
+
+.spacing {
+  width: 100%;
+  background-color: transparent;
+}
